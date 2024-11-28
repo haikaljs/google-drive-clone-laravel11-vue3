@@ -41,6 +41,8 @@
                     <MenuItem v-slot="{ active }">
                         <ResponsiveNavLink
                             :href="route('logout')"
+                            method="post"
+                            as="button"
                             :class="[
                                 active
                                     ? 'bg-violet-500 text-white'
